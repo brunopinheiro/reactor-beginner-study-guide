@@ -6,7 +6,7 @@ I built this guide based on this [gist](https://gist.github.com/williamhjcho/4df
 
 And, here are some other links that might help you understanding reactive programming:
 - [The introduction to Reactive Programming you've been missing](https://gist.github.com/staltz/868e7e9bc2a7b8c1f754)
-- [RxMarbles](rxmarbles.com)
+- [RxMarbles](http://rxmarbles.com)
 
 ### What is this project which comes with this guide?
 It's really hard visualising streams and how operators works. One thing that really helped me during my learning process was to test some of those operators with different inputs and on different scenarios. At the beginning of your studies it's hard to even know how to setup a project and implement the first scenarios, and for that reason, I implemented some simple examples which I hope can help you get on track!
@@ -20,7 +20,7 @@ Here are my suggestions (which are the same things I did when I was learning) on
 $ ./gradlew run
 ```
 4. Check what was printed on the console
-5. _(Optional)_ Try to draw a visual representation of it - [RxMarbles](rxmarbles.com)
+5. _(Optional)_ Try to draw a visual representation of it - [RxMarbles](http://rxmarbles.com)
 
 > Not only for Reactive Programming, but for every framework, new language or tool that I use / study, one thing that really helps me understand things better, is trying figuring out how a function works by reading its signature.
 >
