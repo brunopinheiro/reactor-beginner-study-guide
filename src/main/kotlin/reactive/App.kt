@@ -3,8 +3,9 @@ package reactive
 class App
 
 fun main() {
-//    Creation.eventsExample()
-//    Creation.deferExample()
+//    Publishers.monoExamples()
+//    Publishers.fluxExamples()
+//    Publishers.deferExample()
 
 //    StreamSubscriptions.disposeExample()
 
