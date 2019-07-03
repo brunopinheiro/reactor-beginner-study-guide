@@ -7,12 +7,12 @@ import java.time.Duration
 class Transformations {
     companion object {
         private const val numberOfValues: Long = 5
-
         private val numbersPublisher: Flux<Int>
             get() = Flux.interval(Duration.ofMillis(200))
                 .publishOn(Schedulers.single())
                 .take(numberOfValues)
                 .map { it.toInt() }
+                .debug("\tnumbers")
 
         private fun getLettersPublisher(index: Int) =
             Flux.interval(Duration.ofMillis(500))
@@ -20,6 +20,7 @@ class Transformations {
                 .take(numberOfValues)
                 .map { listOf("a", "b", "c", "d", "e")[it.toInt()] }
                 .map { "$index-$it" }
+                .debug("\tletters-$index")
 
         fun bufferCollectExamples() {
             subscribeAndWait(numbersPublisher.buffer().debug("buffer"))

@@ -65,7 +65,7 @@ class Publishers {
                     .publishOn(Schedulers.single())
                     .map { it.toInt() }
                     .take(10)
-                    .debug("fluxDelay")
+                    .debug("fluxInterval")
             )
             println("---------------------------------")
         }
